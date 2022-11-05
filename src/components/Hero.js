@@ -6,7 +6,6 @@ export default function Hero() {
   return (
     <div>
         <div className='h-[70vh] w-screen bg-[#6905F9] rounded-tr-[12rem] rounded-bl-[12rem]' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/backgroundHero.png'})`,
-            backgroundRepeat: 'no-repeat',
             backgroundPositionY: 'center',
             backgroundPositionX: 'center'}}></div>
         <div className='absolute top-0 w-screen flex justify-between gap-10'>
