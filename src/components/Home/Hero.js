@@ -1,6 +1,6 @@
 import React from 'react'
-import Me from '../assets/me2.png'
-import Coding from '../assets/coding.png'
+import Me from '../../assets/me2.png'
+import Coding from '../../assets/coding.png'
 import { BsCloudDownloadFill, BsChevronRight } from 'react-icons/bs'
 export default function Hero() {
   return (

@@ -1,16 +1,19 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Projects from './components/Projects'
+import Home from './components/Home/Home'
 import Footer from './components/Footer'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 export default function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Projects />
-      <Footer />
+      <Router>
+        <Navbar />
+          <Routes>
+          <Route exact path='/' element={<Home />} />
+          </Routes>
+        <Footer />
+      </Router>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
-import Proj1 from '../assets/proj_1.jpg'
-import Proj2 from '../assets/proj_2.jpg'
-import Confidential from '../assets/confidential.jpg'
+import Proj1 from '../../assets/proj_1.jpg'
+import Proj2 from '../../assets/proj_2.jpg'
+import Confidential from '../../assets/confidential.jpg'
 export default function Projects() {
   return (
     <div className='mt-[10vh]'>
