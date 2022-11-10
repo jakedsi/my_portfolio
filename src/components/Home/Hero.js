@@ -1,6 +1,7 @@
 import React from 'react'
 import Me from '../../assets/me2.png'
 import Coding from '../../assets/coding.png'
+import Resume from '../../assets/resume/Jake Aboyot.docx'
 import { BsCloudDownloadFill, BsChevronRight } from 'react-icons/bs'
 import { NavLink} from 'react-router-dom'
 export default function Hero() {
@@ -12,7 +13,7 @@ export default function Hero() {
         <div className='absolute top-0 w-screen flex justify-between gap-10 mt-[8vh]'>
             <div className='flex justify-between w-[55%]'>
             <div className='px-5'>
-                <button className='flex items-center text-white gap-2 mt-[2vh] text-[11px] bg-[#28045C] py-1 px-3 rounded-md'><BsCloudDownloadFill /> Resume</button>
+                <a href={Resume} download><button className='flex items-center text-white gap-2 mt-[2vh] text-[11px] bg-[#28045C] py-1 px-3 rounded-md'><BsCloudDownloadFill /> Resume</button></a>
             </div>
             <div className='mt-[25vh]'>
                 <div className='text-left flex flex-col'>
