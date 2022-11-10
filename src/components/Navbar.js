@@ -20,7 +20,7 @@ export default function Navbar() {
                     </path>
                 </svg>
             </button>
-            <div className={nav ? 'fixed md:flex flex-col h-screen justify-evenly items-center top-0 bg-[#28045C] z-50 hidden' : 'hidden'}>
+            <div className={nav ? 'fixed md:flex flex-col h-screen justify-evenly items-center top-0 bg-[#28045C] bg-opacity-95 z-50 hidden' : 'hidden'}>
                  <button
                     className="border-0 text-white text-[25px] leading-none font-semibold" onClick={()=> navState((prev) => !prev)}>
                     <AiOutlineCloseSquare className=' text-gray-400'/>
