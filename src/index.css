@@ -12,3 +12,7 @@ body {
     border-bottom: 1px solid #e6c8d3;
     font-weight: 600;
   }
+
+  .active1 {
+    background : #9348FF;
+  }

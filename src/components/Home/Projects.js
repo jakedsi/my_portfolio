@@ -23,7 +23,7 @@ export default function Projects() {
             posCompany : "Full Stack Developer - Personal Passion Project", 
             img: Proj2, 
             techs: [<SiMongodb fontSize="25px" color='white'/>, <h1 className='text-white'>Express</h1>, <DiReact fontSize="25px" color='white'/>, <SiNodedotjs fontSize="25px" color='white'/>], 
-            description:"This project was created for personal passion in web development. I use Netlify as my frontend integration and Heroku as my backend integration", 
+            description:"This project was created for personal passion in web development. I use Netlify as my frontend and Heroku as my backend RESTful API", 
             functions : "Home, Classes, About, Login, Signup, RESTful API, JWT Authentication", 
             link : "https://dazzling-maamoul-804a9c.netlify.app/"
           },
@@ -34,7 +34,7 @@ export default function Projects() {
             img: Confidential, 
             techs: [<DiCodeigniter fontSize="25px" color='white'/>, <DiBootstrap fontSize="25px" color='white'/>, <h1 className='text-white'>AdminLTE</h1>, <SiMysql fontSize="25px" color='white'/>], 
             description:"This project was created to trace the flow of items and generate reports", 
-            functions : "Receiving ARE, Transfer ARE, Unserviceable, Serviceable, Item Logs, Supplier, Employee, Department, Users, User Permissions"
+            functions : "Receiving ARE, Transfer ARE, Unserviceable, Serviceable, Item Logs, Supplier, Employee, Department, Users, User Permissions and Reports"
           },
 
           {
@@ -51,7 +51,7 @@ export default function Projects() {
             posCompany : "Full Stack Developer - City Government of Digos", 
             img: Confidential, 
             techs: [<DiCodeigniter fontSize="25px" color='white'/>, <DiBootstrap fontSize="25px" color='white'/>, <h1 className='text-white'>AdminLTE</h1>, <SiMysql fontSize="25px" color='white'/>], 
-            description:"This is a rapid development project which is created due to an earthquake happened on December 2019 which affected many houses and establishments", 
+            description:"This is a rapid development project was created due to an earthquake happened on December 2019 which affected many houses and establishments", 
             functions : "Input houses/establishments who are the most needed for assistance and generate reports"
           },
 
