@@ -7,7 +7,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if(e.target.user_name.value === "" || e.target.user_email.value === "" || e.target.user_email.value === "message") 
+    if(e.target.user_name.value === "" || e.target.user_email.value === "" || e.target.user_email.value === "") 
     return funcRes({type:"err", info: "Please fill all inputs"})
 
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
