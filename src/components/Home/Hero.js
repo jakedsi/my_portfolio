@@ -2,6 +2,7 @@ import React from 'react'
 import Me from '../../assets/me2.png'
 import Coding from '../../assets/coding.png'
 import { BsCloudDownloadFill, BsChevronRight } from 'react-icons/bs'
+import { NavLink} from 'react-router-dom'
 export default function Hero() {
   return (
     <div>
@@ -19,8 +20,8 @@ export default function Hero() {
                 <h1 className='text-[#FFD73A] font-black text-[40px]'>Web Developer_</h1>
                 <p className='text-white text-[12px] pl-1'>with 3+ Years experience in Web Development</p>
                 <div className='flex mt-3 gap-3'>
-                    <button className='flex items-center text-[10px] text-white py-2 px-5 w-[150px] justify-between bg-[#28045C] rounded hover:rounded-lg'>I need a website  <BsChevronRight className='text-right'/></button>
-                    <button className='flex items-center text-[10px] text-white py-2 px-5 w-[150px] justify-between bg-[#7E28FF] rounded hover:rounded-lg'>I'm looking to hire  <BsChevronRight className='text-right'/></button>
+                <NavLink exact="true" activeclassname="active" to="/contact" end> <button className='flex items-center text-[10px] text-white py-2 px-5 w-[150px] justify-between bg-[#28045C] rounded hover:rounded-lg'>I need a website  <BsChevronRight className='text-right'/></button> </NavLink>
+                <NavLink exact="true" activeclassname="active" to="/contact" end> <button className='flex items-center text-[10px] text-white py-2 px-5 w-[150px] justify-between bg-[#7E28FF] rounded hover:rounded-lg'>I'm looking to hire  <BsChevronRight className='text-right'/></button></NavLink>
                 </div>
                 </div>
             </div>
