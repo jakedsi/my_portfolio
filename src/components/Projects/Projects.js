@@ -5,6 +5,8 @@ import Confidential from '../../assets/confidential.jpg'
 import {AiOutlineCloseSquare} from 'react-icons/ai'
 import {DiCodeigniter, DiBootstrap, DiReact} from 'react-icons/di'
 import {SiMysql, SiMongodb, SiNodedotjs} from 'react-icons/si'
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function Projects() {
 
@@ -69,27 +71,27 @@ export default function Projects() {
         <h1 className='text-center text-white text-[20px] font-medium mt-[5vh]' style={{letterSpacing:"3px"}}>PROJECTS</h1>
         <div className='flex my-16 px-32 justify-center flex-wrap xl:px-1'>
             <div className='flex flex-col justify-center items-center w-[350px] my-4'>
-                <img src={Proj1} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
+                <LazyLoadImage effect="blur" src={Proj1} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
                 <h1 className='mt-3 text-white text-[13px] font-medium'>LGU Website</h1>
                 <button className='mt-2 px-2 py-[2px] bg-[#FFD63C] rounded text-[12px] font-semibold' onClick={() => showDetails(0)}>Details</button>
             </div>
             <div className='flex flex-col justify-center items-center w-[350px] my-4'>
-                <img src={Proj2} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
+                <LazyLoadImage effect="blur" src={Proj2} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
                 <h1 className='mt-3 text-white text-[13px] font-medium'>Personal Yoga Website</h1>
                 <button className='mt-2 px-2 py-[2px] bg-[#FFD63C] rounded text-[12px] font-semibold' onClick={() => showDetails(1)}>Details</button>
             </div>
             <div className='flex flex-col justify-center items-center w-[350px] my-4'>
-                <img src={Confidential} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
+                <LazyLoadImage effect="blur" src={Confidential} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
                 <h1 className='mt-3 text-white text-[13px] font-medium'>Inventory and A.R.E Monitoring System</h1>
                 <button className='mt-2 px-2 py-[2px] bg-[#FFD63C] rounded text-[12px] font-semibold' onClick={() => showDetails(2)}>Details</button>
             </div>
             <div className='flex flex-col justify-center items-center w-[350px] my-4'>
-                <img src={Confidential} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
+                <LazyLoadImage effect="blur" src={Confidential} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
                 <h1 className='mt-3 text-white text-[13px] font-medium'>Education Program</h1>
                 <button className='mt-2 px-2 py-[2px] bg-[#FFD63C] rounded text-[12px] font-semibold' onClick={() => showDetails(3)}>Details</button>
             </div>
             <div className='flex flex-col justify-center items-center w-[350px] my-4'>
-                <img src={Confidential} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
+                <LazyLoadImage effect="blur" src={Confidential} alt="" className='h-[180px] w-[285px] rounded-xl' style={{filter: "drop-shadow(0px 6px 9px rgba(255, 215, 58, 0.15))"}}/>
                 <h1 className='mt-3 text-white text-[13px] font-medium'>City Risk Operating System</h1>
                 <button className='mt-2 px-2 py-[2px] bg-[#FFD63C] rounded text-[12px] font-semibold' onClick={() => showDetails(4)}>Details</button>
             </div>
@@ -116,17 +118,17 @@ export default function Projects() {
                  
                   </button>
                 {/*body*/}
-                <div className="relative px-6 flex gap-5 bg-[#6905f9]">
-                  <img src={data.img} alt="" className='w-[450px] border-r border-white mb-5'/>
-                  <div className='w-[450px] mb-5 flex flex-col justify-between'>
-                    <div>
+                <div className="relative px-6 flex gap-5 bg-[#6905f9] lg:flex-col">
+                  <LazyLoadImage src={data.img} alt="" className='w-[450px]  mb-5  lg:w-[350px] 1xs:w-full' effect="blur"/>
+                  <div className='w-[450px] mb-5 flex flex-col justify-between border-l border-white lg:border-t lg:border-l-0 lg:pb-5 lg:w-[350px] 1xs:w-full pl-5 lg:pt-5'>
+                    <div className='text-left lg:text-center'>
                     <h1 className='text-[25px] text-white font-bold'>{data.name}</h1>
                     <h1 className='text-[10px] text-gray-400 font-bold'>{data.posCompany}</h1>
                     <h1 className='text-[12px] text-white font-normal mt-5'>Short Description : <br/><span className='text-[11px] text-gray-300'>{data.description}</span> </h1>
                     <h1 className='text-[12px] text-white font-normal mt-4'>Functions Implemented: <br/><span className='text-[11px] text-gray-300'> {data.functions}</span></h1>
                     </div>
                     
-                    <div className='flex mt-8'>
+                    <div className='flex mt-8 lg:flex-col lg:justify-center lg:items-center lg:gap-5'>
                       <div className='flex gap-3 mt-1 items-center'>
                       <h1 className='text-[13px] text-white'>Technology used :</h1>
                         {data.techs.map((info, i) =>{
@@ -136,7 +138,7 @@ export default function Projects() {
                           })
                         }
                       </div>
-                      <div className='flex gap-3 ml-auto mt-auto'>
+                      <div className='flex gap-3 ml-auto mt-auto lg:ml-0'>
                         {
                         data.link 
                         ? 
